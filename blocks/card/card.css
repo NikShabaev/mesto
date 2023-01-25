@@ -5,10 +5,10 @@
   border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr min-content;
-  grid-template-rows: min-content 1fr;  
-  grid-template-areas: 
-    "image image"
-    "name like";
+  grid-template-rows: min-content 1fr;
+  grid-template-areas:
+  "image image"
+  "name like";
   gap: 0;
 }
 

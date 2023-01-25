@@ -1,7 +1,7 @@
 .card__like {
   background-image: url(../../../images/card/Vector_like.svg);
-  Width: 22px;
-  Height: 19px;
+  width: 22px;
+  height: 19px;
   border: none;
   align-self: center;
   grid-area: like;
