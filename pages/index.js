@@ -10,7 +10,7 @@ let descriptionInput =  editForm.querySelector ('.popup__input_description');
 function openPopup () {
   popup.classList.add ('popup__open');
   nameInput.value = getName.textContent;
-  jobInput.value = getDescription.textContent;
+  descriptionInput.value = getDescription.textContent;
 }
 
 function closePopup ()  {
