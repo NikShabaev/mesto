@@ -7,10 +7,18 @@
   cursor: pointer;
   width: 32px;
   height: 32px;
-  background-color: rgba(0, 0, 0, 1);
-  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .popup__button_action_close:hover {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 550px) {
+  .popup__button_action_close {
+    background-image: url(../../../../images/popup/close\ icon\ small.svg);
+    width: 20px;
+    height: 20px;
+    right: 0;
+  }
 }
