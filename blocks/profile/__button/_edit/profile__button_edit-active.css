@@ -1,0 +1,14 @@
+.profile__button_edit-active {
+    background-image: url(../../../../images/profile/Edit\ Button.svg);
+    width: 24px;
+    height: 24px;
+    border: 1px solid #FFFFFF;
+    grid-area: edit;
+}
+
+@media screen and (max-width: 320px) {
+  .profile__button_edit-active {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -14,14 +14,26 @@
 
   <main class="main">
     <section class="profile">
-      <img src="./images/profile/image.jpg" alt="" class="profile__avatar">
+      <img src="./images/profile/image.jpg" alt="портретКусто" class="profile__avatar">
         <div class="profile__info">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button class="button profile__button profile__button_edit" type="button"></button>
+          <button class="profile__button profile__button_edit-active" type="button"></button>
           <p class="profile__text">Исследователь океана</p>
         </div>
-        <button class="button profile__button profile__button_add" type="button"></button>
+        <button class="profile__button profile__button_add-disabled" type="button"></button>
     </section>
+
+    <div class="popup">
+      <div class="popup__container">
+          <h2 class="popup__title">Редактировать профиль</h2>
+        <form class="popup__form" name="popup-form" method="post">
+          <input class="popup__input popup__input_name-active" value="Жак-Ив Кусто" name="name" type="text" placeholder="Имя">
+          <input class="popup__input popup__input_description-active" value="Исследователь океана" name="description" type="text" placeholder="Описание">
+          <button class="popup__button popup__button_action_save" type="submit">Сохранить</button>
+        </form>
+        <button class="popup__button popup__button_action_close" type="button"></button>
+      </div>
+    </div>
 
     <section class="elements">
       <div class="card">
@@ -61,16 +73,6 @@
     <p class="footer__copyright">&copy; 2023 Mesto Russia</p>
   </footer>
 
-  <div class="popup">
-    <form class="popup__container" name="popup-form" method="post">
-      <h2 class="popup__title">Редактировать профиль</h2>
-      <input class="popup__input popup__input_name" value="Жак-Ив Кусто" name="name" type="text" placeholder="Имя">
-      <input class="popup__input popup__input_description" value="Исследователь океана" name="description" type="text" placeholder="Описание">
-      <button class="popup__button popup__button_action_save" type="submit">Сохранить</button>
-      <button class="popup__button popup__button_action_close" type="button"></button>
-    </form>
-  </div>
-
-  <script src="./pages/index.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 </html>

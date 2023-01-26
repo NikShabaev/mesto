@@ -1,13 +1,14 @@
-.profile__button_add {
+.profile__button_add-disabled {
     background-image: url(../../../../images/profile/Add\ Button.svg);
     width: 150px;
     height: 50px;
     justify-self: flex-end;
     margin-left: auto;
+    border: 2px solid #FFFFFF;
 }
 
 @media screen and (max-width: 899px) {
-    .profile__button_add {
+    .profile__button_add-disabled {
         width: 282px;
         margin: 0 auto;
         background-image: url(../../../../images/profile/Add\ Button2.svg);

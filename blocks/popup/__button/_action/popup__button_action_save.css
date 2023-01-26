@@ -5,11 +5,10 @@
   cursor: pointer;
   border-radius: 2px;
   padding: 14px 125px 18px;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 18px;
 }
 
 .popup__button_action_save:hover {
@@ -19,7 +18,8 @@
 @media screen and (max-width: 550px) {
   .popup__button_action_save {
     font-size: 14px;
-    line-height: 17px;
+    line-height: 14px;
     padding: 14px 82px;
+    margin-top: 15px;
   }
 }
