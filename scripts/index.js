@@ -1,16 +1,16 @@
 const popup = document.querySelector ('.popup');
-const buttonEditOpen = document.querySelector ('.profile__button_edit-active');
+const buttonEditOpen = document.querySelector ('.profile__button_active_edit');
 const buttonClose = document.querySelector ('.popup__button_action_close');
-const getprofileName = document.querySelector ('.profile__name');
-const getprofileDescription = document.querySelector ('.profile__text');
+const profileName = document.querySelector ('.profile__name');
+const profileDescription = document.querySelector ('.profile__text');
 const editForm = document.querySelector ('.popup__container');
-let nameInput = editForm.querySelector ('.popup__input_name-active');
-let descriptionInput =  editForm.querySelector ('.popup__input_description-active');
+let nameInput = editForm.querySelector ('.popup__input_active_name');
+let descriptionInput =  editForm.querySelector ('.popup__input_active_description');
 
 function openPopup () {
   popup.classList.add ('popup__open');
-  nameInput.value = getprofileName.textContent;
-  descriptionInput.value = getprofileDescription.textContent;
+  nameInput.value = profileName.textContent;
+  descriptionInput.value = profileDescription.textContent;
 }
 
 function closePopup ()  {
@@ -19,8 +19,8 @@ popup.classList.remove ('popup__open');
 
 function formSubmitHandler (evt) {
     evt.preventDefault();
-    getprofileName.textContent = `${nameInput.value}`;
-    getprofileDescription.textContent = `${descriptionInput.value}`;
+    profileName.textContent = `${nameInput.value}`;
+    profileDescription.textContent = `${descriptionInput.value}`;
     closePopup ();
 }
 
