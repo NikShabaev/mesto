@@ -1,4 +1,4 @@
-.profile__button_disabled_add {
+.profile__button_type_add {
     background-image: url(../../../../images/profile/Add\ Button.svg);
     width: 150px;
     height: 50px;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 899px) {
-    .profile__button_disabled_add {
+    .profile__button_type_add {
         width: 282px;
         margin: 0 auto;
         background-image: url(../../../../images/profile/Add\ Button2.svg);
